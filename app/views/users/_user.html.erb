@@ -1,0 +1,46 @@
+<div id="<%= dom_id user %>">
+  <p>
+    <strong>First name:</strong>
+    <%= user.first_name %>
+  </p>
+  <p>
+    <strong>Image:</strong>
+    <%= image_tag(user.avatar, width: 50) if user.avatar.present? %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= user.last_name %>
+  </p>
+
+  <p>
+    <strong>Role:</strong>
+    <%= user.role.name %>
+  </p>
+
+  <p>
+    <strong>Phone number:</strong>
+    <%= user.phone_number %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= user.email %>
+  </p>
+
+  <p>
+    <strong>Password:</strong>
+    <%= user.password %>
+  </p>
+
+  <p>
+    <strong>Bio:</strong>
+    <%= user.bio %>
+  </p>
+
+  <p>
+    <strong>Last login:</strong>
+    <%= user.last_login %>
+  </p>
+
+</div>
